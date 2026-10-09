@@ -34,7 +34,12 @@ public class BallRespawn : MonoBehaviour
         grab.selectExited.RemoveListener(OnRelease);
     }
 
-    void OnGrab(SelectEnterEventArgs args) { releasedTimer = -1f; }
+    void OnGrab(SelectEnterEventArgs args)
+    {
+        releasedTimer = -1f;
+        gameObject.tag = "Throwable";   // poate puncta din nou dupa ce e luata in mana
+    }
+
     void OnRelease(SelectExitEventArgs args) { releasedTimer = respawnDelay; }
 
     void Update()

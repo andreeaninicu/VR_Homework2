@@ -22,8 +22,20 @@ public class Hoop : MonoBehaviour
     {
         if (!other.CompareTag(throwableTag)) return;
         // doar daca mingea cade de sus in jos
+
         Rigidbody rb = other.attachedRigidbody;
-        if (rb == null || rb.linearVelocity.y > 0f) return;
+        if (rb == null) return;
+
+        // a intrat de jos (centrul mingii e sub centrul zonei): nu puncteaza
+        if (other.transform.position.y < transform.position.y)
+        {
+            other.gameObject.tag = "Untagged";   // nici nu mai poate puncta la caderea inapoi
+            return;
+        }
+
+        // si, in plus, trebuie sa cada
+        if (rb.linearVelocity.y > 0f) return;
+
         // distanta orizontala jucator -> cos
         Vector3 p = player != null ? player.position : Vector3.zero;
         Vector3 h = transform.position;

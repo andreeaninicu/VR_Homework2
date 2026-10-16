@@ -154,7 +154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7472585249480919484, guid: 6831e272eee11f34092883e64fa1f645, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.36144
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7472585249480919484, guid: 6831e272eee11f34092883e64fa1f645, type: 3}
       propertyPath: m_LocalPosition.z
@@ -191,7 +191,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1294842196524552282, guid: 6831e272eee11f34092883e64fa1f645, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 811316838}
   m_SourcePrefab: {fileID: 100100000, guid: 6831e272eee11f34092883e64fa1f645, type: 3}
 --- !u!1001 &311233892
 PrefabInstance:
@@ -313,16 +316,108 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &662382103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5281543858187522117, guid: 051e505b20579ac4d852817094d8f25b, type: 3}
+  m_PrefabInstance: {fileID: 6432087108874553324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &662382104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4539646603203692963, guid: 051e505b20579ac4d852817094d8f25b, type: 3}
   m_PrefabInstance: {fileID: 6432087108874553324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &662382105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662382103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558bfe385efe1f04c8c4547e85345fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HandAnimatorDriver
+  gripAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Grip
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: d7836363-45dd-4121-8d36-1b50f4d5a599
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+      m_Priority: 0
+    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  triggerAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Trigger
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 82b411ea-4dc1-4365-bb6e-05f155b1a4db
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+      m_Priority: 0
+    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  animator: {fileID: 0}
+  smoothing: 15
+  logValues: 1
+--- !u!1 &811316836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1294842196524552282, guid: 6831e272eee11f34092883e64fa1f645, type: 3}
+  m_PrefabInstance: {fileID: 303182858}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &811316837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7472585249480919484, guid: 6831e272eee11f34092883e64fa1f645, type: 3}
   m_PrefabInstance: {fileID: 303182858}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &811316838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811316836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558bfe385efe1f04c8c4547e85345fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HandAnimatorDriver
+  gripAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Grip
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 618d87e8-27e7-42a3-9267-3af18e491805
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+      m_Priority: 0
+    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  triggerAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Trigger
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 213ad703-6d10-458f-8845-feff3002fdab
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+      m_Priority: 0
+    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  animator: {fileID: 0}
+  smoothing: 15
+  logValues: 0
 --- !u!1 &1063574687
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,7 +942,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1115952532879439479, guid: 051e505b20579ac4d852817094d8f25b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.03
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 1193613967622215615, guid: 051e505b20579ac4d852817094d8f25b, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -859,7 +954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4539646603203692963, guid: 051e505b20579ac4d852817094d8f25b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.36144
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4539646603203692963, guid: 051e505b20579ac4d852817094d8f25b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -900,7 +995,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5281543858187522117, guid: 051e505b20579ac4d852817094d8f25b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 662382105}
   m_SourcePrefab: {fileID: 100100000, guid: 051e505b20579ac4d852817094d8f25b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
